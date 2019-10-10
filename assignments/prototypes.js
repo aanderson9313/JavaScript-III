@@ -53,7 +53,7 @@ function Humanoid (humAttributes) {
   this.team = humAttributes.team;
   this.weapons = humAttributes.weapons;
   this.language = humAttributes.language;
-  CharacterStats.call(this.humAttributes);
+  CharacterStats.call(this, humAttributes);
 }
  Humanoid.prototype = Object.create (CharacterStats.prototype);
  Humanoid.prototype.greet = function () {
